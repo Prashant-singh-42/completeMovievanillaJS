@@ -1,0 +1,44 @@
+.footer {
+    margin-top: 20px;
+    position: static;
+    bottom: 0;
+    left: 0;
+}
+
+.container h3 {
+    color: #ff4f5a;
+    font-size: 23px;
+    width: 100%;
+    margin: 20px;
+    padding-left: 20px;
+}
+
+.movie-gallery {
+    margin: 0 auto;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    /* height: 100vh; */
+}
+
+.movie-gallery .test {
+    width: 350px;
+    height: 200px;
+    /* background-color: aqua; */
+}
+
+img {
+    object-fit: cover;
+    width: 350px;
+    overflow: hidden;
+    height: 200px;
+    vertical-align: middle;
+    border-radius: 5px;
+}
+
+/* .movie-gallery::after {
+    content: "";
+    width: 350px;
+  } */
