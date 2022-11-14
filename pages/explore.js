@@ -6,6 +6,8 @@ let searchQuery = document.querySelector("input");
 
 let seachContainer = document.querySelector(".container-search");
 
+let movieGallery = document.querySelector(".movie-gallery");
+
 const filterMovies = (startLetters, data) => {
     let res = []
     // data.filter(movie => {
@@ -89,3 +91,18 @@ search.onclick = () => {
         }, 300);
    }
 }
+
+// code to polulate the movies
+let populateMovie = () =>{
+    for (let index = 1; index <= 7; index++) {
+        let item = document.createElement("a");
+        item.href = `../video/video.html`
+        item.classList.add("test")
+        let img = document.createElement("img");
+        img.src = `../assets/freeimagegenerator${index}.png`;
+        img.classList.add("image");
+        item.appendChild(img);
+        movieGallery.appendChild(item)    
+    }   
+}
+populateMovie()
